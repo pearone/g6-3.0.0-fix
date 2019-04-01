@@ -6878,7 +6878,7 @@
                 var r = null;
                 return i.each(e.children, function(e) {
                     return e.id === t ? (r = e,
-                    !1) : !(r = n.findDataById(e, t)) && void 0
+                    !1) : !(r = n.findDataById(t, e)) && void 0
                 }),
                 r
             }
