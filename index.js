@@ -8162,7 +8162,7 @@
                       , r = n.get("pixelRatio")
                       , a = this.get("sensitivity")
                       , o = e.getZoom()
-                      , s = (o = t.wheelDelta > 0 ? 1 - .05 * a : 1 + .05 * a) * e.getZoom();
+                      , s = (o = t.wheelDelta < 0 ? 1 - .05 * a : 1 + .05 * a) * e.getZoom();
                     s > this.get("maxZoom") || s < this.get("minZoom") || (e.zoom(o, {
                         x: i.x / r,
                         y: i.y / r
